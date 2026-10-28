@@ -1,0 +1,13 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+@theme{
+    --color-hover:#8E1616;
+    --color-navbar-text:#847D7D;
+    --font-lato: "Lato", sans-serif;
+    --font-playfair: "Playfair Display", serif;
+    --color-footer:#FAFAFA;
+    --color-footer-text:#0A142F;
+}
+@plugin "daisyui" {
+  themes: light --default;
+}
