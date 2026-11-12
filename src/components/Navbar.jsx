@@ -47,7 +47,7 @@ function Navbar() {
 
       <div className="hidden items-center justify-between max-lg:flex">
         <img
-          src="/src/assets/Images/logohome.png"
+          src={logo}
           alt="logo"
           className="w-auto h-auto ml-[25px] max-md:ml-[16px]"
         />
