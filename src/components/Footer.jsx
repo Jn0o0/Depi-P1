@@ -5,22 +5,23 @@ import { Link } from 'react-router-dom'
 import icf from '../assets/Icons/icFacebook.svg'
 import ici from '../assets/Icons/Linkedin.svg'
 import ict from '../assets/Icons/icTwitter.svg'
+import Counter from './Counter'
 export default function Footer() {
   return (
     <>
     <footer className='w-full bg-[#FAFAFA] flex flex-col'>
-      <div className='mx-auto w-full max-w-[1085px] px-5 pt-10'>
-        <div className='flex justify-between gap-[12px]'>
+      <div className='mx-auto w-full max-w-[1085px] px-5 pt-10 max-md:px-[16px]'>
+        <div className='flex justify-between gap-[12px] max-md:flex-col max-md:items-center max-md:gap-[32px] max-md:text-center'>
 
-          <div className='flex flex-col items-start'>
+          <div className='flex flex-col items-start max-md:items-center'>
             <img src={ftlog} alt='footer logo' className='h-[151px] w-[151px] object-contain'/>
             <p className='font-lato text-[#0A142F]'>+1 (7635) 547-12-97</p>
-            <p className='mt-[26px] font-lato text-[#0A142F]'>support@lift.agency</p>
+            <p className='mt-[26px] font-lato text-[#0A142F] max-md:mt-[12px]'>support@lift.agency</p>
           </div>
 
-          <div className='flex flex-col'>
-            <h3 className='font-lato w-auto h-auto text-[16px] font-bold mt-[36px] mb-[10px]'>Quick Links</h3>
-            <div className='flex flex-col gap-[12px] text-[#0A142F] font-normal text-[16px] font-lato'>
+          <div className='flex flex-col max-md:items-center'>
+            <h3 className='font-lato w-auto h-auto text-[16px] font-bold mt-[36px] mb-[10px] max-md:mt-0'>Quick Links</h3>
+            <div className='flex flex-col gap-[12px] text-[#0A142F] font-normal text-[16px] font-lato max-md:items-center'>
               <Link to={"/"}>Home</Link>
               <Link to={"/units"}>Inventories</Link>
               <Link to={"/zones"}>Zones</Link>
@@ -29,9 +30,9 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className='flex flex-col'>
-            <h3 className='font-lato w-auto h-auto text-[16px] font-bold mt-[36px] mb-[10px]'>About</h3>
-            <div className='flex flex-col gap-[12px] text-[#0A142F] font-normal text-[16px] font-lato'>
+          <div className='flex flex-col max-md:items-center'>
+            <h3 className='font-lato w-auto h-auto text-[16px] font-bold mt-[36px] mb-[10px] max-md:mt-0'>About</h3>
+            <div className='flex flex-col gap-[12px] text-[#0A142F] font-normal text-[16px] font-lato max-md:items-center'>
               <p>Grand Atlas</p>
               <p>Privacy Policy</p>
               <p>Legal</p>
@@ -40,15 +41,15 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className='w-[248px] shrink-0'>
-            <h3 className='font-lato w-auto h-auto text-[16px] font-normal mt-[36px] mb-[34px]'>Get In touch</h3>
+          <div className='w-[248px] shrink-0 max-md:w-full max-md:max-w-[360px]'>
+            <h3 className='font-lato w-auto h-auto text-[16px] font-normal mt-[36px] mb-[34px] max-md:mt-0 max-md:mb-[16px]'>Get In touch</h3>
             <div className='flex h-[46px] w-auto overflow-hidden rounded-md border border-[#8E1616]'>
               <input type="text" placeholder="Get product updates" className="min-w-0 flex-1 bg-transparent px-3 text-sm outline-none placeholder:text-[#847D7D]"/>
               <button type='button' className='flex w-[50px] shrink-0 items-center justify-center bg-[#8E1616] text-white'>
                 <img src={ar} alt='arrow' className='h-auto w-auto'/>
               </button>
             </div>
-            <div className='mt-[21px] flex items-center gap-[15px]'>
+            <div className='mt-[21px] flex items-center gap-[15px] max-md:justify-center'>
               <div className='flex items-center justify-center h-[38px] w-[38px] border-[1.5px] border-[#8E1616]/10 rounded-full'>
               <img src={ici} alt='Linkedin' className='w-[11.86px] h-[11.86px] object-contain'/>
               </div>
@@ -62,9 +63,10 @@ export default function Footer() {
           </div>
 
       </div>
-      <div className="mt-[26px] h-px w-full bg-[#0A142F]/[0.06]"></div>
-      <p className='font-lato text-[16px] font-normal w-auto text-[#0A142F] text-center mt-[40px] mb-[36px]'>&copy;2020 Lift Media. All rights reserved</p>
+      <div className="mt-[26px] h-px w-full bg-[#0A142F]/[0.06] max-md:mt-[32px]"></div>
+      <p className='font-lato text-[16px] font-normal w-auto text-[#0A142F] text-center mt-[40px] mb-[36px] max-md:mt-[24px] max-md:mb-[24px] max-md:text-[14px]'>&copy;2020 Lift Media. All rights reserved</p>
       </div>
+
     </footer>
     
     </>

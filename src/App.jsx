@@ -6,7 +6,10 @@ import Developers from "./pages/Developers/Developers";
 import Navbar from "./components/Navbar";
 import Layout from "./components/Layout/Layout";
 import ContactUs from "./pages/ContactUs/ContactUs";
-import ZoneDetails from "./pages/Zones/ZoneDetails";
+import UnitsDetails from "./pages/Units/UnitsDetails";
+import ProjectsDetails from './pages/Zones/ProjectsDetails';
+import ZoneProjects from './pages/Zones/ZoneProjects'
+import DeveloperProjects from './pages/Developers/DeveloperProjects'
 function App() {
   return (
     <>
@@ -16,10 +19,13 @@ function App() {
           <Route path="/home" element={<Home />} />
           <Route path="/units" element={<Units />} />
           <Route path="/zones" element={<Zones />} />
-          <Route path="/zones/:id" element={<ZoneDetails />} />
+          <Route path="/units/:id" element={<UnitsDetails />} />
           <Route path="/developers" element={<Developers />} />
           <Route path="/contact-us" element={<ContactUs />} />
-        </Route>
+          <Route path="/zones/:zoneId" element={<ZoneProjects />} />
+          <Route path="/projects/:id" element={<ProjectsDetails />} />
+          <Route path="/developers/:id" element={<DeveloperProjects />}/>
+          </Route>
       </Routes>
     </>
   );
