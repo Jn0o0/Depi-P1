@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
 import Counter from "./Counter"
+import logo from "../assets/Images/Logohome.png";
 
 function Navbar() {
   const [open, setOpen] = useState(false)
@@ -25,7 +26,7 @@ function Navbar() {
   return (
     <nav className="sticky top-0 z-50 bg-white  text-lg font-medium text-navbar-text  ">
       <ul className="flex justify-between items-center max-lg:hidden">
-        <img src="/src/assets/Images/logohome.png" alt="logo" className="w-auto h-auto ml-[25px]" />
+        <img src={logo} alt="logo" className="w-auto h-auto ml-[25px]" />
         <Link to={"/"}>
         <li className="block border-b-[1.5px] border-transparent pb-1 font-bold transition-colors font-lato duration-300 hover:border-hover hover:text-hover">Home</li>
         </Link>
